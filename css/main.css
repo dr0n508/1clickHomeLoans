@@ -56,7 +56,7 @@ header {
 
 .list-advantages {
   list-style-position: inside;
-  list-style-image: url("../img/icon-star.png");
+  list-style-type: none;
   font-size: 2.2em;
   line-height: 1.5em;
   margin-left: 20px;
@@ -69,6 +69,23 @@ header {
     .list-advantages {
       font-size: 1.2em;
       margin-left: 0; } }
+  .list-advantages li {
+    padding: 0 0 0 20px;
+    position: relative; }
+    .list-advantages li:before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 22%;
+      width: 15px;
+      height: 15px;
+      display: block;
+      background: url("../img/icon-star.png") 50% 50% no-repeat;
+      background-size: contain; }
+      @media only screen and (max-width: 500px) {
+        .list-advantages li:before {
+          top: 0;
+          left: 0; } }
 
 .text-main-content {
   font-size: 1.25em;
