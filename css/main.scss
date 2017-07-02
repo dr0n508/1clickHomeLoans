@@ -217,6 +217,10 @@ header {
     font-weight: 800;
     font-size: 1.95em;
     margin-bottom: 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: #eba616;;
+    }
     @media only screen and (max-width: 500px) {
       padding: 10px 30px;
     }

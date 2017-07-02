@@ -192,7 +192,10 @@ header {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 1.95em;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    cursor: pointer; }
+    .form-home-loans .btn-submit:hover {
+      background-color: #eba616; }
     @media only screen and (max-width: 500px) {
       .form-home-loans .btn-submit {
         padding: 10px 30px; } }
