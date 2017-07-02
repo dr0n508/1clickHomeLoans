@@ -131,7 +131,6 @@ header {
   color: white;
   padding: 20px 10px;
   .form-row {
-
     overflow: hidden;
     .wrap-input {
       width: 50%;
@@ -146,6 +145,7 @@ header {
         outline: none;
         border-radius: 3px;
         padding: 5px 10px;
+        line-height: 1.8em;
       }
       @media only screen and (max-width: 500px) {
         width: 100%;
@@ -162,11 +162,14 @@ header {
       padding: 0 15px;
       float: left;
       select {
+        border: none;
+        outline: none;
         font-family: 'Poppins', sans-serif;
         width: 100%;
         border-radius: 3px;
         padding: 5px 10px;
         font-weight: 500;
+        line-height: 1.8em;
       }
       @media only screen and (max-width: 500px) {
         //width: 100%;
