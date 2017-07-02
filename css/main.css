@@ -215,22 +215,27 @@ footer {
   position: relative;
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/bg-thank-page.jpg") 50% 50% no-repeat;
   background-size: cover; }
-  .thank-page h1 {
-    font-size: 3.5em;
-    margin-bottom: 20px; }
-  .thank-page p {
-    font-size: 3em; }
   .thank-page .content-thank-page {
-    padding: 50px 50px 0 50px;
+    padding: 50px 200px 0 200px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     color: #454545;
     text-align: center; }
-  @media only screen and (max-width: 768px) {
-    .thank-page h1 {
-      font-size: 2.5em; }
-    .thank-page p {
-      font-size: 2em; } }
+    .thank-page .content-thank-page h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px; }
+    .thank-page .content-thank-page p {
+      font-size: 3em; }
+    @media only screen and (max-width: 992px) {
+      .thank-page .content-thank-page {
+        padding: 50px 100px 0 100px; } }
+    @media only screen and (max-width: 768px) {
+      .thank-page .content-thank-page {
+        padding: 50px 50px 0 50px; }
+        .thank-page .content-thank-page h1 {
+          font-size: 2.5em; }
+        .thank-page .content-thank-page p {
+          font-size: 2em; } }
 
 /*# sourceMappingURL=main.css.map */
