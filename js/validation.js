@@ -12,25 +12,25 @@ $("#user_detail_form").submit(function(e){
 function validate_1() {
     console.log('validate');
     strErrorMsg = "";
-    notEmpty_2(document.getElementById('Forename'), 'Enter your first name');
+    notEmpty_2(document.getElementById('first-name'), 'Enter your first name');
     notEmpty_2(document.getElementById('Surname'), 'Enter your surname');
     notEmpty_2(document.getElementById('BirthdayDay'), 'Select your date of birth');
     notEmpty_2(document.getElementById('BirthdayMonth'), 'Select your month of birth');
     notEmpty_2(document.getElementById('BirthdayYear'), 'Select your year of birth');
     email(document.getElementById('email'), 'Enter your email address');
     notEmpty_2(document.getElementById('Postcode'), 'Enter your postcode');
-    notEmpty_2(document.getElementById('HouseNumber'), 'Enter your house phone number');
+    notEmpty_2(document.getElementById('PhoneNumber'), 'Enter your house phone number');
 
     if (strErrorMsg != '') {
 
-        //send error to Google Tag Manager
-        dataLayer.push({
-            'event': 'GAEvent',
-            'eventCategory': 'form',
-            'eventAction': 'submission error',
-            'eventLabel': strErrorMsg,
-            'eventValue': undefined
-        });
+        // //send error to Google Tag Manager
+        // dataLayer.push({
+        //     'event': 'GAEvent',
+        //     'eventCategory': 'form',
+        //     'eventAction': 'submission error',
+        //     'eventLabel': strErrorMsg,
+        //     'eventValue': undefined
+        // });
 
         alert(strErrorMsg);
         return false;

@@ -5,6 +5,10 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 12px; }
 
+body, html {
+  width: 100%;
+  height: 100%; }
+
 div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
   padding: 0;
   margin: 0; }
@@ -15,6 +19,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   -moz-box-sizing: border-box; }
 
 header {
+  background-color: white;
   padding: 10px 30px; }
   header .logo img {
     width: 250px; }
@@ -203,5 +208,29 @@ footer {
 @media only screen and (max-width: 768px) {
   footer {
     padding: 15px; } }
+
+.thank-page {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/bg-thank-page.jpg") 50% 50% no-repeat;
+  background-size: cover; }
+  .thank-page h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px; }
+  .thank-page p {
+    font-size: 3em; }
+  .thank-page .content-thank-page {
+    padding: 50px 50px 0 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #454545;
+    text-align: center; }
+  @media only screen and (max-width: 768px) {
+    .thank-page h1 {
+      font-size: 2.5em; }
+    .thank-page p {
+      font-size: 2em; } }
 
 /*# sourceMappingURL=main.css.map */
