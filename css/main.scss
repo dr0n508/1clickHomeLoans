@@ -23,12 +23,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   -moz-box-sizing: border-box;
 }
 
-$main-color: #454545;
-$btn-text-color: #2e2e2e;
-$btn-color: #ffb016;
-$form-color: #00af98;
-$bg-color: #004380;
-
 header {
   background-color: white;
   padding: 10px 30px;
@@ -46,6 +40,20 @@ header {
   padding: 30px;
   color: white;
   overflow: hidden;
+  @media only screen and (max-width: 1200px) {
+    .description { width: 50%}
+    .form-home-loans { width: 50% }
+  }
+  @media only screen and (max-width: 992px) {
+    .description {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .form-home-loans { width: 100% }
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 15px;
+  }
 }
 
 .main-title {
@@ -79,13 +87,11 @@ header {
 .list-advantages {
   list-style-position: inside;
   list-style-type: none;
-  //list-style-image: url("../img/icon-star.png");
   font-size: 2.2em;
   line-height: 1.5em;
   margin-left: 20px;
   font-weight: 600;
   margin-bottom: 20px;
-
   @media only screen and (max-width: 768px) {
     font-size: 1.8em;
   }
@@ -120,14 +126,12 @@ header {
   }
 }
 
-
-
 //form
 .form-home-loans {
   text-align: center;
   float: right;
   width: 38%;
-  background-color: $form-color;
+  background-color: #00af98;
   color: white;
   padding: 20px 10px;
   .form-row {
@@ -205,8 +209,8 @@ header {
   .btn-submit {
     padding: 10px 50px;
     border-radius: 5px;
-    background-color: $btn-color;
-    color: $btn-text-color;
+    background-color: #ffb016;
+    color: #2e2e2e;
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
@@ -223,7 +227,10 @@ header {
 
 }
 
+
 // end form
+
+.link { display: inline-block}
 
 footer {
   padding: 30px 30px;
@@ -237,24 +244,6 @@ footer {
   }
 }
 
-
-.main-content {
-  @media only screen and (max-width: 1200px) {
-    .description { width: 50%}
-    .form-home-loans { width: 50% }
-  }
-  @media only screen and (max-width: 992px) {
-    .description {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-    .form-home-loans { width: 100% }
-  }
-  @media only screen and (max-width: 768px) {
-    padding: 15px;
-  }
-}
-
 footer {
   @media only screen and (max-width: 768px) {
     padding: 15px;
@@ -262,7 +251,6 @@ footer {
 }
 
 //thank-you-page
-
 .thank-page {
   min-width: 100%;
   min-height: 100%;

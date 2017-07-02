@@ -18,12 +18,14 @@ function validate_1() {
     notEmpty_2(document.getElementById('BirthdayMonth'), 'Select your month of birth');
     notEmpty_2(document.getElementById('BirthdayYear'), 'Select your year of birth');
     email(document.getElementById('email'), 'Enter your email address');
-    notEmpty_2(document.getElementById('Postcode'), 'Enter your postcode');
     notEmpty_2(document.getElementById('PhoneNumber'), 'Enter your house phone number');
+    notEmpty_2(document.getElementById('Address'), 'Enter your Address');
+    notEmpty_2(document.getElementById('Postcode'), 'Enter your postcode');
+
 
     if (strErrorMsg != '') {
 
-        // //send error to Google Tag Manager
+        //send error to Google Tag Manager
         // dataLayer.push({
         //     'event': 'GAEvent',
         //     'eventCategory': 'form',

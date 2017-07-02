@@ -33,6 +33,20 @@ header {
   padding: 30px;
   color: white;
   overflow: hidden; }
+  @media only screen and (max-width: 1200px) {
+    .main-content .description {
+      width: 50%; }
+    .main-content .form-home-loans {
+      width: 50%; } }
+  @media only screen and (max-width: 992px) {
+    .main-content .description {
+      width: 100%;
+      margin-bottom: 30px; }
+    .main-content .form-home-loans {
+      width: 100%; } }
+  @media only screen and (max-width: 768px) {
+    .main-content {
+      padding: 15px; } }
 
 .main-title {
   font-size: 3.35em;
@@ -185,6 +199,9 @@ header {
   .form-home-loans .footer-form-text {
     font-size: .85em; }
 
+.link {
+  display: inline-block; }
+
 footer {
   padding: 30px 30px;
   text-align: center;
@@ -193,21 +210,6 @@ footer {
     font-size: 1.25em; }
   footer .footer-text {
     font-size: 1em; }
-
-@media only screen and (max-width: 1200px) {
-  .main-content .description {
-    width: 50%; }
-  .main-content .form-home-loans {
-    width: 50%; } }
-@media only screen and (max-width: 992px) {
-  .main-content .description {
-    width: 100%;
-    margin-bottom: 30px; }
-  .main-content .form-home-loans {
-    width: 100%; } }
-@media only screen and (max-width: 768px) {
-  .main-content {
-    padding: 15px; } }
 
 @media only screen and (max-width: 768px) {
   footer {
