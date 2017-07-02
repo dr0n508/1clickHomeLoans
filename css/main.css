@@ -93,6 +93,7 @@ header {
       margin-bottom: 10px; }
       .form-home-loans .form-row .wrap-input select, .form-home-loans .form-row .wrap-input input {
         font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         width: 100%;
         border: none;
         outline: none;
@@ -115,7 +116,8 @@ header {
         font-family: 'Poppins', sans-serif;
         width: 100%;
         border-radius: 3px;
-        padding: 5px 10px; }
+        padding: 5px 10px;
+        font-weight: 500; }
       @media only screen and (max-width: 500px) {
         .form-home-loans .row-date-birth .wrap-input {
           padding: 0 2px; } }

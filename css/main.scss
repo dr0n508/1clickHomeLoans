@@ -114,6 +114,7 @@ header {
       margin-bottom: 10px;
       select, input  {
         font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         width: 100%;
         border: none;
         outline: none;
@@ -139,6 +140,7 @@ header {
         width: 100%;
         border-radius: 3px;
         padding: 5px 10px;
+        font-weight: 500;
       }
       @media only screen and (max-width: 500px) {
         //width: 100%;
