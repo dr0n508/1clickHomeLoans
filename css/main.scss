@@ -18,21 +18,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   -moz-box-sizing: border-box;
 }
 
-.container {
-  width: 1140px;
-  margin: 0 auto;
-  @media only screen and (max-width: 1200px) {
-    width: 970px;
-  }
-  @media only screen and (max-width: 992px) {
-    width: 750px;
-  }
-  @media only screen and (max-width: 768px) {
-    width: auto;
-    padding: 0 10px;
-  }
-}
-
 $main-color: #454545;
 $btn-text-color: #2e2e2e;
 $btn-color: #ffb016;
@@ -41,10 +26,16 @@ $bg-color: #004380;
 
 header {
   padding: 10px 30px;
+  .logo {
+    img { width: 250px}
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
 }
 
 .main-content {
-  background: url("../img/bg.jpg") 50% 50% no-repeat, $bg-color;
+  background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("../img/bg.jpg") 50% 50% no-repeat;
   background-size: cover;
   padding: 30px;
   color: white;
@@ -53,29 +44,32 @@ header {
 
 .main-title {
   font-size: 3.35em;
-  span {
+  margin-bottom: 5px;
 
-
-  }
 }
 .second-title {
   font-size: 2.8em;
+  margin-bottom: 20px;
 }
-
-
 
 .description {
   float: left;
   width: 62%;
+  padding-right: 20px;
 }
 
 .list-advantages {
   list-style-position: inside;
   list-style-image: url("../img/icon-star.png");
   font-size: 2.2em;
+  line-height: 1.5em;
   margin-left: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
+
+//form
 .form-home-loans {
   text-align: center;
   float: right;
@@ -83,7 +77,6 @@ header {
   background-color: $form-color;
   color: white;
   padding: 20px 10px;
-
   .form-row {
     margin-bottom: 10px;
     overflow: hidden;
@@ -102,8 +95,8 @@ header {
     }
   }
   .row-date-birth {
-    overflow: hidden;
     margin-bottom: 10px;
+    overflow: hidden;
     label { padding: 0 15px; }
     .wrap-input {
       width: 33.33%;
@@ -117,15 +110,11 @@ header {
       }
     }
   }
-
-
-
-
   label {
     font-size: 1.12em;
     font-weight: 500;
     margin-bottom: 5px;
-    display: inline-block;
+    display: block;
   }
   .header-form {
     font-weight: 600;
@@ -140,12 +129,10 @@ header {
     text-align: left;
     padding-bottom: 20px;
     margin: 0 10px 10px 10px;
-
   }
   .fieldset.border-bottom {
     border-bottom: solid 1px white;
   }
-
   .btn-submit {
     padding: 10px 50px;
     border-radius: 5px;
@@ -163,13 +150,35 @@ header {
   }
 }
 
-footer {
-  padding: 10px 30px;
-  text-align: center;
-  .footer-text-uppercase {
+// end form
 
+footer {
+  padding: 30px 30px;
+  text-align: center;
+  line-height: 1.5em;
+  .footer-text-uppercase {
+    font-size: 1.25em;
   }
   .footer-text {
     font-size: 1em;
   }
 }
+
+
+.main-content {
+  @media only screen and (max-width: 1200px) {
+    .description { width: 50%}
+    .form-home-loans { width: 50% }
+  }
+  @media only screen and (max-width: 992px) {
+    .description {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .form-home-loans { width: 100% }
+  }
+  @media only screen and (max-width: 768px) {
+
+  }
+}
+
