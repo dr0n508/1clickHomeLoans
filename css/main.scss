@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
@@ -30,5 +30,146 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   @media only screen and (max-width: 768px) {
     width: auto;
     padding: 0 10px;
+  }
+}
+
+$main-color: #454545;
+$btn-text-color: #2e2e2e;
+$btn-color: #ffb016;
+$form-color: #00af98;
+$bg-color: #004380;
+
+header {
+  padding: 10px 30px;
+}
+
+.main-content {
+  background: url("../img/bg.jpg") 50% 50% no-repeat, $bg-color;
+  background-size: cover;
+  padding: 30px;
+  color: white;
+  overflow: hidden;
+}
+
+.main-title {
+  font-size: 3.35em;
+  span {
+
+
+  }
+}
+.second-title {
+  font-size: 2.8em;
+}
+
+
+
+.description {
+  float: left;
+  width: 62%;
+}
+
+.list-advantages {
+  list-style-position: inside;
+  list-style-image: url("../img/icon-star.png");
+  font-size: 2.2em;
+  margin-left: 20px;
+}
+
+.form-home-loans {
+  text-align: center;
+  float: right;
+  width: 38%;
+  background-color: $form-color;
+  color: white;
+  padding: 20px 10px;
+
+  .form-row {
+    margin-bottom: 10px;
+    overflow: hidden;
+    .wrap-input {
+      width: 50%;
+      float: left;
+      padding: 0 15px;
+      select, input  {
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        padding: 5px 10px;
+      }
+    }
+  }
+  .row-date-birth {
+    overflow: hidden;
+    margin-bottom: 10px;
+    label { padding: 0 15px; }
+    .wrap-input {
+      width: 33.33%;
+      padding: 0 15px;
+      float: left;
+      select {
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        border-radius: 3px;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+
+
+
+  label {
+    font-size: 1.12em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  .header-form {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 2.4em;
+  }
+  .desc-form {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+  }
+  .fieldset {
+    text-align: left;
+    padding-bottom: 20px;
+    margin: 0 10px 10px 10px;
+
+  }
+  .fieldset.border-bottom {
+    border-bottom: solid 1px white;
+  }
+
+  .btn-submit {
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: $btn-color;
+    color: $btn-text-color;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1.95em;
+    margin-bottom: 20px;
+  }
+  .footer-form-text {
+    font-size: .85em;
+  }
+}
+
+footer {
+  padding: 10px 30px;
+  text-align: center;
+  .footer-text-uppercase {
+
+  }
+  .footer-text {
+    font-size: 1em;
   }
 }
