@@ -32,10 +32,22 @@ header {
 .main-title {
   font-size: 3.35em;
   margin-bottom: 5px; }
+  @media only screen and (max-width: 768px) {
+    .main-title {
+      font-size: 2.5em; } }
+  @media only screen and (max-width: 500px) {
+    .main-title {
+      font-size: 2em; } }
 
 .second-title {
   font-size: 2.8em;
   margin-bottom: 20px; }
+  @media only screen and (max-width: 768px) {
+    .second-title {
+      font-size: 2em; } }
+  @media only screen and (max-width: 500px) {
+    .second-title {
+      font-size: 1.3em; } }
 
 .description {
   float: left;
@@ -50,6 +62,20 @@ header {
   margin-left: 20px;
   font-weight: 600;
   margin-bottom: 20px; }
+  @media only screen and (max-width: 768px) {
+    .list-advantages {
+      font-size: 1.8em; } }
+  @media only screen and (max-width: 500px) {
+    .list-advantages {
+      font-size: 1.2em;
+      margin-left: 0; } }
+
+.text-main-content {
+  font-size: 1.25em;
+  line-height: 1.5em; }
+  @media only screen and (max-width: 500px) {
+    .text-main-content {
+      font-size: 1em; } }
 
 .form-home-loans {
   text-align: center;
@@ -59,12 +85,12 @@ header {
   color: white;
   padding: 20px 10px; }
   .form-home-loans .form-row {
-    margin-bottom: 10px;
     overflow: hidden; }
     .form-home-loans .form-row .wrap-input {
       width: 50%;
       float: left;
-      padding: 0 15px; }
+      padding: 0 15px;
+      margin-bottom: 10px; }
       .form-home-loans .form-row .wrap-input select, .form-home-loans .form-row .wrap-input input {
         font-family: 'Poppins', sans-serif;
         width: 100%;
@@ -72,6 +98,10 @@ header {
         outline: none;
         border-radius: 3px;
         padding: 5px 10px; }
+      @media only screen and (max-width: 500px) {
+        .form-home-loans .form-row .wrap-input {
+          width: 100%;
+          padding: 0 2px; } }
   .form-home-loans .row-date-birth {
     margin-bottom: 10px;
     overflow: hidden; }
@@ -86,6 +116,9 @@ header {
         width: 100%;
         border-radius: 3px;
         padding: 5px 10px; }
+      @media only screen and (max-width: 500px) {
+        .form-home-loans .row-date-birth .wrap-input {
+          padding: 0 2px; } }
   .form-home-loans label {
     font-size: 1.12em;
     font-weight: 500;
@@ -95,6 +128,9 @@ header {
     font-weight: 600;
     margin-bottom: 10px;
     font-size: 2.4em; }
+    @media only screen and (max-width: 500px) {
+      .form-home-loans .header-form {
+        font-size: 2em; } }
   .form-home-loans .desc-form {
     margin-bottom: 30px;
     font-size: 1.2em; }
@@ -115,6 +151,9 @@ header {
     font-weight: 800;
     font-size: 1.95em;
     margin-bottom: 20px; }
+    @media only screen and (max-width: 500px) {
+      .form-home-loans .btn-submit {
+        padding: 10px 30px; } }
   .form-home-loans .footer-form-text {
     font-size: .85em; }
 
@@ -138,5 +177,12 @@ footer {
     margin-bottom: 30px; }
   .main-content .form-home-loans {
     width: 100%; } }
+@media only screen and (max-width: 768px) {
+  .main-content {
+    padding: 15px; } }
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 15px; } }
 
 /*# sourceMappingURL=main.css.map */
